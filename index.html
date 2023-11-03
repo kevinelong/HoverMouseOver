@@ -1,0 +1,28 @@
+<style>
+    img.square{
+        width: 10vw;
+        height: 10vw;
+        object-fit: cover;
+    }
+    img.square:hover{
+        transform: rotate(10deg);
+    }
+    img{
+        vertical-align: top;
+    }
+
+</style>
+<body>
+    <img id="a" class="square" src="./images/shrek.webp" alt="">
+    <img id="b" class="square" src="./images/fiona.jpg" alt="">
+    <img id="x" alt="preview">
+</body>
+<script>
+    function over(e){
+        x.src = e.target.src;
+    }
+    a.onmouseover = over;
+    b.onmouseover = over;
+
+
+</script>
